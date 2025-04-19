@@ -14,9 +14,9 @@ import base64
 import secrets
 import uuid
 
-# JWT Configuration
+
 JWT_SECRET = secrets.token_hex(32)
-TOKEN_EXPIRATION = 3600  # 1 hour in seconds
+TOKEN_EXPIRATION = 3600  
 
 class RequestHandler(BaseHTTPRequestHandler):
     def _set_cookies(self, cookie_data, max_age=None, expires=None):
